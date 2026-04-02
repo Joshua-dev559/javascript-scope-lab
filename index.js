@@ -1,20 +1,20 @@
 // Write your solution in this file!
-// Step 1: Variable Data
-var burgers = ['Hamburger', 'Cheeseburger'];
-var featuredDrink = 'Strawberry Milkshake';
+// Global variables
+const burgers = ['Hamburger', 'Cheeseburger'];
+let featuredDrink = 'Strawberry Milkshake';
 
-// Step 2: Function
+// Function to add burgers
 function addBurger() {
-    var newBurger = 'Flatburger';
-    burgers.push(newBurger);
+  const newBurger = 'Flatburger';
+  burgers.push(newBurger);
+
+  if (true) {
+    const anotherNewBurger = 'Maple Bacon Burger';
+    burgers.push(anotherNewBurger);
+  }
 }
 
-// Step 3: Block Scope
-if (true) {
-    let anotherNewBurger = 'Maple Bacon Burger';
-    burgers.push(anotherNewBurger);
-
-    function changeFeaturedDrink() {
-        featuredDrink = 'The JavaShake';
-    }
+// Function to change featured drink
+function changeFeaturedDrink() {
+  featuredDrink = 'The JavaShake';
 }
