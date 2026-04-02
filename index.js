@@ -1,17 +1,20 @@
 // Write your solution in this file!
-const burgers = ('Hamburger', 'Cheeseburger');
-const featuredDrink = 'Strawberry Milkshake';
+// Step 1: Variable Data
+var burgers = ['Hamburger', 'Cheeseburger'];
+var featuredDrink = 'Strawberry Milkshake';
 
-function addBurger (){
-    const newBurger = 'Flatburger';
+// Step 2: Function
+function addBurger() {
+    var newBurger = 'Flatburger';
     burgers.push(newBurger);
 }
 
-if(true){
+// Step 3: Block Scope
+if (true) {
     let anotherNewBurger = 'Maple Bacon Burger';
     burgers.push(anotherNewBurger);
 
-    function changeFeaturedDrink(){
+    function changeFeaturedDrink() {
         featuredDrink = 'The JavaShake';
     }
 }
